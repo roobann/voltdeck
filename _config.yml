@@ -1,0 +1,25 @@
+# Jekyll config for the VoltDeck support / legal site.
+# Served at https://voltdeck.rooban.net via GitHub Pages.
+
+title:        VoltDeck
+tagline:      NEC 2026 calculator and reference for working electricians
+description:  >-
+  VoltDeck is a code-reference and calculation tool for licensed electrical
+  professionals. NEC 2026 at launch. iOS first; Android planned.
+
+# Custom domain — declared in CNAME and set in repo Settings → Pages.
+url:          "https://voltdeck.rooban.net"
+baseurl:      ""
+
+# Theme
+theme:        minima
+minima:
+  skin:       auto      # respects system light/dark
+
+# Build
+markdown:     kramdown
+permalink:    /:title/
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
