@@ -5,21 +5,27 @@ title:        VoltDeck
 tagline:      NEC 2026 calculator and reference for working electricians
 description:  >-
   VoltDeck is a code-reference and calculation tool for licensed electrical
-  professionals. NEC 2026 at launch. iOS first; Android planned.
+  professionals.
 
 # Custom domain — declared in CNAME and set in repo Settings → Pages.
 url:          "https://voltdeck.rooban.net"
 baseurl:      ""
 
-# Theme
+# Theme — minima with auto light/dark
 theme:        minima
 minima:
-  skin:       auto      # respects system light/dark
+  skin:       auto
+
+# No social/email/twitter/github fields are set, so the minima footer
+# stays empty (just the title + copyright line). No author identity,
+# no GitHub username, no email leaks here.
 
 # Build
 markdown:     kramdown
 permalink:    /:title/
+
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - .gitignore
